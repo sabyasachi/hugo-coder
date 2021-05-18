@@ -11,9 +11,10 @@ if (localStorage.getItem("colorscheme")) {
     setTheme(darkModeMediaQuery.matches ? "dark" : "light");
 }
 
-darkModeToggle.addEventListener('click', () => {
-    setTheme(body.classList.contains("colorscheme-dark") ? "light" : "dark");
-});
+// TODO-sabya commented out temporarily
+// darkModeToggle.addEventListener('click', () => {
+//     setTheme(body.classList.contains("colorscheme-dark") ? "light" : "dark");
+// });
 
 darkModeMediaQuery.addListener((event) => {
     setTheme(event.matches ? "dark" : "light");
